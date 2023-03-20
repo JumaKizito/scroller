@@ -1,0 +1,36 @@
+.container2 {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.containerimage {
+  flex-shrink: 0;
+  width: 400px;
+  height: 350px;
+}
+.containerimage:hover {
+  transform: scale(1.1);
+  font-size: 30px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2400px);
+  }
+}
+
+@media (max-width: 600px) {
+  .container2 {
+    display: block;
+  }
+  .containerimage {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
